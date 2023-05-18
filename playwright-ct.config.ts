@@ -1,5 +1,4 @@
 import { defineConfig, devices } from '@playwright/experimental-ct-svelte';
-import { sveltekit } from '@sveltejs/kit/vite';
 import { resolve } from 'node:path';
 
 /**
@@ -33,8 +32,7 @@ export default defineConfig({
 				alias: {
 					$lib: resolve('src/lib')
 				}
-			},
-			plugins: [sveltekit()]
+			}
 		}
 	},
 
